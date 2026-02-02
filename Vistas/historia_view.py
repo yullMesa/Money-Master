@@ -35,8 +35,28 @@ def obtener_historia_view(page):
         },
         {
             "titulo": "7. Europa y el auge del papel moneda",
-            "info": "Siglo VII - XI (China): Durante la dinastía Tang y Song, los mercaderes se cansaron de cargar monedas pesadas. Empezaron a dejar su metal con 'custodios' y a cambio recibían un recibo de papel. ¡Había nacido el billete!",
-            "imagen": "Historia/China.png"
+            "info": "Siglo XVII (Europa): Los orfebres en Londres hacían algo similar. La gente depositaba su oro y usaba los recibos para pagar. Eventualmente, los bancos centrales (como el de Inglaterra) tomaron el control de emitir estos billetes.",
+            "imagen": "Historia/Europa.png"
+        },
+        {
+            "titulo": "8. El patrón oro y el dinero moderno",
+            "info": "Siglo XIX: Se establece el Patrón Oro. Esto significaba que cada billete en circulación estaba respaldado por una cantidad física de oro en una bóveda. Podías ir al banco y cambiar tu papel por metal.",
+            "imagen": "Historia/oro.png"
+        },
+        {
+            "titulo": "9. El fin del patrón oro",
+            "info": "1971 (El fin de una era): Richard Nixon (EE. UU.) eliminó el respaldo en oro del dólar. Desde entonces, vivimos en la era del Dinero Fiduciario (o Fiat). El dinero tiene valor porque todos confiamos en el gobierno que lo emite, no porque haya oro detrás.",
+            "imagen": "Historia/fin.png"
+        },
+        {
+            "titulo": "10. Era digital y criptomonedas",
+            "info": "1950: Aparece la primera tarjeta de crédito (Diners Club). El dinero empieza a volverse un registro contable en computadoras.",
+            "imagen": "Historia/Credito.png"
+        },
+        {
+            "titulo": "11. Era digital y criptomonedas",
+            "info": "2009: Se mina el primer bloque de Bitcoin. Por primera vez existe un dinero digital, descentralizado y limitado, que no depende de ningún gobierno.",
+            "imagen": "Historia/Bitcoin.png"
         }
     ]
     
@@ -78,7 +98,7 @@ def obtener_historia_view(page):
     return ft.Container(
         content=ft.Column(
             [
-                ft.Text("LÍNEA DE TIEMPO FINANCIERA", size=12, color="grey500", weight="bold"),
+                ft.Text("LÍNEA DE TIEMPO sobre el dinero", size=12, color="grey500", weight="bold"),
                 ft.Divider(height=10, color="transparent"),
                 img_hitos,
                 lbl_titulo,
