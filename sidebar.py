@@ -17,8 +17,8 @@ def construir_sidebar(page, cambiar_pantalla_func):
                 ),
                 
                 ft.TextButton(
-                    content=ft.Text("📊 Simulador Pro", color="white"),
-                    on_click=lambda _: cambiar_pantalla_func("simulador")
+                    content=ft.Text("📊 Domina Tu Dinero", color="white"),
+                    on_click=lambda _: cambiar_pantalla_func("manejo")
                 ),
 
                 ft.TextButton(
