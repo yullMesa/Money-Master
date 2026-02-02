@@ -22,8 +22,8 @@ def construir_sidebar(page, cambiar_pantalla_func):
                 ),
 
                 ft.TextButton(
-                content=ft.Text("📊 Regla 50-30-20", color="white"),
-                on_click=lambda _: cambiar_pantalla_func("presupuesto")
+                content=ft.Text("📖 Glosario", color="white"),
+                on_click=lambda _: cambiar_pantalla_func("glosario")
                 ),
                 ft.TextButton(
                 content=ft.Text("🎯 Mis Metas", color="white"),

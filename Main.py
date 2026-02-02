@@ -2,6 +2,7 @@ import flet as ft
 from sidebar import construir_sidebar
 from Vistas.historia_view import obtener_historia_view
 from Vistas.manejo_view import obtener_manejo_view
+from Vistas.glosario_view import obtener_glosario_view
 
 def main(page: ft.Page):
     # --- CONFIGURACIÓN UNIVERSAL ---
@@ -22,6 +23,9 @@ def main(page: ft.Page):
 
         elif nombre_vista == "manejo":
             area_contenido.controls.append(obtener_manejo_view(page))
+            
+        elif nombre_vista == "glosario":
+            area_contenido.controls.append(obtener_glosario_view(page))
         page.update()
 
     def entrar_al_sistema(e):
