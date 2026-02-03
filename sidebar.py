@@ -29,6 +29,10 @@ def construir_sidebar(page, cambiar_pantalla_func):
                 content=ft.Text("🎯 Mis Metas", color="white"),
                 on_click=lambda _: cambiar_pantalla_func("metas")
                 ),
+                ft.TextButton(
+                content=ft.Text("📅 Registro", color="white"),
+                on_click=lambda _: cambiar_pantalla_func("registro")
+                ),
                 
             ],
             spacing=15,

@@ -8,6 +8,7 @@ from Vistas.inicio_view import obtener_inicio_view
 import time
 
 import sidebar
+from Vistas.registro_view import obtener_registro_view
 
 def main(page: ft.Page):
     # --- CONFIGURACIÓN UNIVERSAL ---
@@ -35,6 +36,8 @@ def main(page: ft.Page):
             area_contenido.controls.append(obtener_metas_view(page))
         elif nombre_vista == "inicio":
             area_contenido.controls.append(obtener_inicio_view(page))
+        elif nombre_vista == "registro":
+            area_contenido.controls.append(obtener_registro_view(page))
         
         # IMPORTANTE: Solo usamos page.update(). 
         # Borra la línea que dice area_contenido.update()
