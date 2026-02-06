@@ -9,9 +9,12 @@ import time
 
 import sidebar
 from Vistas.registro_view import obtener_registro_view
+from database import inicializar_db
+from Vistas.graficos_view import obtener_graficos_view
 
 def main(page: ft.Page):
     # --- CONFIGURACIÓN UNIVERSAL ---
+    inicializar_db()
     page.title = "Money Master Pro"
     page.bgcolor = "#0B0E14"
     page.padding = 0
@@ -38,6 +41,8 @@ def main(page: ft.Page):
             area_contenido.controls.append(obtener_inicio_view(page))
         elif nombre_vista == "registro":
             area_contenido.controls.append(obtener_registro_view(page))
+        elif nombre_vista == "graficos":
+            area_contenido.controls.append(obtener_graficos_view(page))
         
         # IMPORTANTE: Solo usamos page.update(). 
         # Borra la línea que dice area_contenido.update()
